@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fraternity: MyString
+  chapter_name: MyString
+
+two:
+  fraternity: MyString
+  chapter_name: MyString

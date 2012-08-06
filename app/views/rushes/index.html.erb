@@ -1,0 +1,23 @@
+<h1>Listing rushes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rushes.each do |rush| %>
+  <tr>
+    <td><%= rush.name %></td>
+    <td><%= link_to 'Show', rush %></td>
+    <td><%= link_to 'Edit', edit_rush_path(rush) %></td>
+    <td><%= link_to 'Destroy', rush, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rush', new_rush_path %>

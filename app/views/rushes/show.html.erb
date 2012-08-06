@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1><%= @rush.name %></h1>
+
+
+<h3>Comments</h3>
+<%= render @rush.comments %>
+
+
+<h3>Add a comment:</h3>
+<%= render "comments/form"%>
+	
+
+
+<%= link_to 'Edit', edit_rush_path(@rush) %> |
+<%= link_to 'Back', rushes_path %>

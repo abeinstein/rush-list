@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fraternity:</b>
+  <%= @chapter.fraternity %>
+</p>
+
+<p>
+  <b>Chapter name:</b>
+  <%= @chapter.chapter_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_chapter_path(@chapter) %> |
+<%= link_to 'Back', chapters_path %>
